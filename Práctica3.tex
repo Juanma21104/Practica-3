@@ -1,0 +1,66 @@
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsthm, amsmath}
+\usepackage{nccmath} %Para centrar ecuaciones
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{algorithmic}
+\usepackage{whilecode2}
+
+\graphicspath{ {Images/} }
+    \title{\textbf{Práctica 3}}
+    \author{Juan Manuel Cardeñosa Borrego}
+    \date{}
+    
+    \addtolength{\topmargin}{-3cm}
+    \addtolength{\textheight}{3cm}
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\section*{Ejercicio 1}
+Define the TM solution of exercise 3.4 of the problem list and test its correct
+behaviour.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.30]{/home/juanna/Escritorio/Juanma/aaUma/1º Cuatri/TALF/Práctica 3/Ejercicio1.png}
+
+\end{figure}
+
+\section*{Ejercicio 2}
+Define a recursive function for the sum of three values.\\
+
+\begin{center}
+addition\_3 = $<<\pi^1_1|\sigma\left(\pi^3_3\right)>|\sigma\left(\pi^4_4\right)>$
+\end{center}
+
+\newpage
+\section*{Ejercicio 3}
+Implement a WHILE program that computes the sum of three values. You must use an auxiliary variable that accumulates the result of the sum.
+
+
+\begin{whilecode}[H]
+
+ \While{$X_3 \not = 0$}{
+
+  $X_1 \Assig X_1 + 1$\;
+  $X_3 \Assig X_3 - 1$\
+
+ }
+ 
+  \While{$X_2 \not = 0$}{
+
+  $X_1 \Assig X_1 + 1$\;
+  $X_2 \Assig X_2 - 1$\
+
+ }
+ \DefaultVar{1}\Assig\DefaultVar{1}
+\end{whilecode}
+
+
+\end{document}
+
